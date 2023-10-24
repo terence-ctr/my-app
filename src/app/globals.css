@@ -1,27 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+}
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --brand-colorfourth-color: rgba(51, 57, 79, 1);
+    --brand-colorsecond-color: rgba(37, 45, 58, 1);
+    --brand-colorthird-color: rgba(39, 45, 67, 1);
+    --light-100: rgba(209, 202, 255, 1);
+    --light-200: rgba(255, 202, 202, 1);
+    --light-300: rgba(202, 236, 255, 1);
+    --neutralbrown: rgba(141, 128, 128, 1);
+    --neutralgray: rgba(153, 153, 153, 1);
+    --neutralwhite: rgba(255, 255, 255, 1);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+     :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+        --brand-colorfourth-color: rgba(51, 57, 79, 1);
+        --brand-colormain-color: rgba(32, 36, 51, 1);
+        --brand-colorprimary: rgba(252, 114, 139, 1);
+        --brand-colorsecond-color: rgba(37, 45, 58, 1);
+        --brand-colorthird-color: rgba(39, 45, 67, 1);
+        --light-100: rgba(209, 202, 255, 1);
+        --light-200: rgba(255, 202, 202, 1);
+        --light-300: rgba(202, 236, 255, 1);
+        --neutralbrown: rgba(141, 128, 128, 1);
+        --neutralgray: rgba(153, 153, 153, 1);
+        --neutralwhite: rgba(255, 255, 255, 1);
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Bouton-f {
+    background: linear-gradient(180deg, rgb(119.13, 165.5, 219.94) 0%, rgb(87.95, 94.25, 245.44) 100%)
+}
+
+.Box {
+    background: linear-gradient( 180deg, rgba(9.52, 44.73, 228.44, 0.74) 0%, rgb(219.94, 1.83, 1.83) 46.88%, rgb(112, 255, 203.52) 100%);
+}
+
+.passe {
+    font-family: 'Inter-SemiBold', Helvetica
+}
+
+.Body,
+.body {
+    height: 1024px auto;
 }

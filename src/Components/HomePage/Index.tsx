@@ -9,7 +9,7 @@ export default function HomePage() {
     <div className="text-gray-800 antialiased">
     <main>
       <div
-        className="relative pt-16 pb-32 flex content-center items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-right-top"
+        className="relative pt-16 pb-32 flex content-center items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500cd bg-right-top"
         style={{minHeight: "50vh;"}}
       >
         <div
